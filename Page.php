@@ -25,7 +25,7 @@ class Page {
 	
 	public function __construct( $get ){
 		$this->name = $get;
-		$this->title = ucfirst( $this->request ); // Sets title to default request.
+		$this->title = ucfirst( $this->request );
 
 		if ( !empty( $this->name ) ) {
 			$tmp_name = basename( $this->name );

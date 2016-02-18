@@ -3,18 +3,19 @@
 
 include('Page.php');
 $page = new Page( $_GET['page'] );
-$content = $page->request;
-$title = $page->title;
 
 ?>
 <html>
 <head>
-	<title>MTK Tavern | <?php $title; ?></title>
+	<title>MTK Tavern | <?php echo $page->title; ?></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-	<?php include('templates/header.html'); ?>
-	<?php include('templates/$content.html'); ?>
-	<?php include('templates/footer.html'); ?>
+	<div id="wrap">
+		<?php include('templates/header.html'); ?>
+		<?php include('templates/' . $page->request . '.html'); ?>
+		<?php include('templates/footer.html'); ?>
+	</div>
 </body>
-</html>
+</html
