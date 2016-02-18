@@ -1,0 +1,78 @@
+.gallery p{
+
+	margin: 100px 0;
+}
+
+.coming-soon p{
+
+	margin: 75px 0;
+}
+
+.live-stream p{
+	
+	margin: 75px 0;
+}
+
+.email-signup p{
+	
+	margin: 75px 0;
+}
+
+.private-parties p{
+
+	margin: 75px 0;
+}
+
+@media only screen and (min-width: $tablet-width) {
+	
+	.gallery p{
+
+		margin: 150px 0;
+	}
+
+	.coming-soon p{
+
+		margin: 100px 0;
+	}
+
+	.live-stream {
+	
+		width: $hundred/2;
+	
+		p {
+			margin: 100px 0;
+		}
+	}
+
+	.email-signup {
+
+		width: $hundred/2;
+
+		p {
+			margin: 100px 0;
+		}
+	}
+
+	.private-parties p{
+
+		margin: 100px 0;
+	}
+}
+
+@media only screen and (min-width: $desktop-width) {
+	
+	.gallery p{
+
+		margin: 200px 0;
+	}
+
+	.coming-soon p{
+
+		margin: 150px 0;
+	}
+
+	.private-parties p{
+
+		margin: 150px 0;
+	}
+}

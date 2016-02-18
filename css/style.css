@@ -1,0 +1,226 @@
+/* line 21, sass/variables/_variables.scss */
+html {
+  font-family: "Helvetica", "Arial", sans-se  rif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 1, sass/foundation/_foundation.scss */
+html {
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+}
+
+/* line 7, sass/foundation/_foundation.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 11, sass/foundation/_foundation.scss */
+body {
+  max-width: 400px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* line 17, sass/foundation/_foundation.scss */
+body > * > * {
+  text-align: center;
+  width: 100%;
+  background: #008080;
+  border: solid 1px #fff;
+  margin: auto;
+}
+
+/* line 25, sass/foundation/_foundation.scss */
+#main {
+  clear: both;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 31, sass/foundation/_foundation.scss */
+  body {
+    max-width: 700px;
+  }
+
+  /* line 35, sass/foundation/_foundation.scss */
+  body > * > * {
+    float: left;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 42, sass/foundation/_foundation.scss */
+  body {
+    max-width: 1024px;
+  }
+}
+/* line 1, sass/header/_header.scss */
+.logo {
+  width: 20.11111%;
+}
+/* line 5, sass/header/_header.scss */
+.logo p {
+  margin: 40px 0;
+}
+
+/* line 10, sass/header/_header.scss */
+.navigation {
+  width: 79.89%;
+}
+/* line 14, sass/header/_header.scss */
+.navigation p {
+  margin: 40px 0;
+}
+
+/* line 19, sass/header/_header.scss */
+.title {
+  width: 75%;
+}
+
+/* line 23, sass/header/_header.scss */
+.social-media {
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 30, sass/header/_header.scss */
+  .logo {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 35, sass/header/_header.scss */
+  .navigation {
+    width: 75%;
+    float: left;
+  }
+
+  /* line 40, sass/header/_header.scss */
+  .title {
+    float: left;
+  }
+
+  /* line 44, sass/header/_header.scss */
+  .social-media {
+    float: left;
+  }
+}
+@media only screen and (min-width: 700px) {
+  /* line 51, sass/header/_header.scss */
+  .logo p {
+    margin: 60px 0;
+  }
+
+  /* line 55, sass/header/_header.scss */
+  .navigation p {
+    margin: 60px 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 64, sass/header/_header.scss */
+  .logo p {
+    margin: 92px 0;
+  }
+
+  /* line 68, sass/header/_header.scss */
+  .navigation p {
+    margin: 92px 0;
+  }
+}
+/* line 1, sass/footer/_footer.scss */
+.address p {
+  margin: 40px 0;
+}
+
+/* line 5, sass/footer/_footer.scss */
+.hours p {
+  margin: 40px 0;
+}
+
+/* line 9, sass/footer/_footer.scss */
+.email {
+  float: left;
+  width: 50%;
+}
+
+/* line 14, sass/footer/_footer.scss */
+.copyright {
+  float: left;
+  width: 50%;
+}
+
+/* line 1, sass/pages/_home.scss */
+.gallery p {
+  margin: 100px 0;
+}
+
+/* line 6, sass/pages/_home.scss */
+.coming-soon p {
+  margin: 75px 0;
+}
+
+/* line 11, sass/pages/_home.scss */
+.live-stream p {
+  margin: 75px 0;
+}
+
+/* line 16, sass/pages/_home.scss */
+.email-signup p {
+  margin: 75px 0;
+}
+
+/* line 21, sass/pages/_home.scss */
+.private-parties p {
+  margin: 75px 0;
+}
+
+@media only screen and (min-width: 700px) {
+  /* line 28, sass/pages/_home.scss */
+  .gallery p {
+    margin: 150px 0;
+  }
+
+  /* line 33, sass/pages/_home.scss */
+  .coming-soon p {
+    margin: 100px 0;
+  }
+
+  /* line 38, sass/pages/_home.scss */
+  .live-stream {
+    width: 50%;
+  }
+  /* line 42, sass/pages/_home.scss */
+  .live-stream p {
+    margin: 100px 0;
+  }
+
+  /* line 47, sass/pages/_home.scss */
+  .email-signup {
+    width: 50%;
+  }
+  /* line 51, sass/pages/_home.scss */
+  .email-signup p {
+    margin: 100px 0;
+  }
+
+  /* line 56, sass/pages/_home.scss */
+  .private-parties p {
+    margin: 100px 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 64, sass/pages/_home.scss */
+  .gallery p {
+    margin: 200px 0;
+  }
+
+  /* line 69, sass/pages/_home.scss */
+  .coming-soon p {
+    margin: 150px 0;
+  }
+
+  /* line 74, sass/pages/_home.scss */
+  .private-parties p {
+    margin: 150px 0;
+  }
+}
