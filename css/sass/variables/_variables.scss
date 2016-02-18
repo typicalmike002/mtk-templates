@@ -17,6 +17,19 @@ $color3 : #008080; // Teal
 
 
 
+
+//--------Elements--------//
+%square {
+	text-align: center;
+	width: $hundred;
+	background: $color3;
+	border: solid 1px $color2;
+	margin: auto;
+}
+
+
+
+
 //--------Fonts--------//
 %primaryFont {
 	font-family: "Helvetica", "Arial", sans-se  rif;

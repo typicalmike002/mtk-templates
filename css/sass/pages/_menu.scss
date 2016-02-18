@@ -1,0 +1,23 @@
+.menu {
+	max-width: $mobile-width;
+	margin: 0 auto;
+	@extend %square;
+
+	p {
+		margin: 350px 0;
+	}
+}
+
+@media only screen and (min-width: $tablet-width) {
+	
+	.menu {
+		max-width: $tablet-width;
+	}
+}
+
+@media only screen and (min-width: $desktop-width) {
+
+	.menu {
+		max-width: $desktop-width;
+	}
+}

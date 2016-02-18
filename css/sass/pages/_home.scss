@@ -1,78 +1,86 @@
-.gallery p{
-
-	margin: 100px 0;
+.gallery {
+	@extend %square;
 }
 
-.coming-soon p{
-
-	margin: 75px 0;
+.home-page {
+	margin: 0 auto;
+	max-width: $mobile-width;
 }
 
-.live-stream p{
-	
-	margin: 75px 0;
+.home-page > * {
+	@extend %square;
+
 }
 
-.email-signup p{
-	
-	margin: 75px 0;
+.gallery p {
+	margin: 200px 0;
 }
 
-.private-parties p{
+.coming-soon,
+.live-stream,
+.email-signup, 
+.private-parties {
 
-	margin: 75px 0;
+	p {
+		margin: 75px 0;
+	}
 }
 
 @media only screen and (min-width: $tablet-width) {
 	
-	.gallery p{
-
-		margin: 150px 0;
+	.gallery p {
+		margin: 250px 0;
 	}
 
-	.coming-soon p{
-
-		margin: 100px 0;
+	.home-page {
+		max-width: $tablet-width;
 	}
 
-	.live-stream {
-	
-		width: $hundred/2;
-	
+	.home-page > * {
+		float: left;
+	}
+
+	.coming-soon,
+	.private-parties {
 		p {
 			margin: 100px 0;
 		}
 	}
 
+	.live-stream,
 	.email-signup {
-
 		width: $hundred/2;
-
+	
 		p {
 			margin: 100px 0;
 		}
-	}
-
-	.private-parties p{
-
-		margin: 100px 0;
 	}
 }
 
 @media only screen and (min-width: $desktop-width) {
 	
 	.gallery p{
-
-		margin: 200px 0;
+		margin: 300px 0;
 	}
 
-	.coming-soon p{
-
-		margin: 150px 0;
+	.home-page {
+		max-width: $desktop-width;
 	}
 
-	.private-parties p{
+	.coming-soon,
+	.private-parties {
+		
+		p {
+			margin: 150px 0;
+		}
+	}
 
-		margin: 150px 0;
+	.live-stream,
+	.email-signup {
+		width: $hundred/2;
+	
+		p {
+			margin: 150px 0;
+		}
 	}
 }

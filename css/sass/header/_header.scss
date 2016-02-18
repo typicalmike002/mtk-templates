@@ -1,71 +1,61 @@
-.logo {
+.header > * {
+	float: left;
+	@extend %square;
+}	
 
-	width: $hundred*0.2011111;
+.logo {
+	width: $hundred/2;
 
 	p {
-		margin: 40px 0;
+		margin: 73px 0;
 	}
 }
 
 .navigation {
-
-	width: $hundred*0.7989;
+	width: $hundred/2;
 
 	p {
-		margin: 40px 0;
-	}
-}
-
-.title {
-	width: $hundred*0.75;
-}
-
-.social-media {
-	width: $hundred/4;
-}
-
-
-@media only screen and (max-width: $tablet-width) {
-
-	.logo {
-		width: $hundred/4;
-		float: left;
-	}
-
-	.navigation {
-		width: $hundred*0.75;
-		float: left;
-	}
-	
-	.title {
-		float: left;
-	}
-
-	.social-media {
-		float: left;
+		margin: 73px 0;
 	}
 }
 
 @media only screen and (min-width: $tablet-width) {
-	
-	.logo p{
-		margin: 60px 0;
+
+	.logo {
+		width: $hundred/4;
+
+		p {
+			margin: 93px 0;
+		}
 	}
 
-	.navigation p{
-		margin: 60px 0;
+	.navigation {
+		width: $hundred*0.75;
+
+		p {
+			margin: 93px 0;
+		}
 	}
 
+	.title {
+		float: left;
+		width: $hundred*0.75;
+	}
 
+	.social-media {
+		float: left;
+		width: $hundred/4;
+	}
 }
 
 @media only screen and (min-width: $desktop-width) {
 
-	.logo p{
-		margin: 92px 0;
+	.logo p {
+		margin: 123px 0;
 	}
 
-	.navigation p{
-		margin: 92px 0;
+	.navigation p {
+		margin: 123px 0;
 	}
+
 }

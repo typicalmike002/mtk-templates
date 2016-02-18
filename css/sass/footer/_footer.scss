@@ -1,17 +1,40 @@
-.address p{
-	margin: 40px 0;
+.footer {
+	clear: both;
+}
+
+.footer > * {
+	@extend %square;
+}
+
+.address,
+.hours,
+.email {
+	
+	p {
+		margin: 40px 0;
+	}
 }
 
 .hours p{
 	margin: 40px 0;
 }
 
-.email {
-	float: left;
-	width: $hundred/2;
+.copyright {
+	clear: both;
+	width: $hundred;
 }
 
-.copyright {
-	float: left;
-	width: $hundred/2;
+@media only screen and (min-width: $tablet-width) {
+	
+	.address,
+	.hours,
+	.email {
+		float: left;
+		width: $hundred/3;
+
+		p {
+			margin: 60px 0;
+		}
+	}
+
 }

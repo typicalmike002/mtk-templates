@@ -1,0 +1,42 @@
+.about-page {
+	margin: 0 auto;
+	max-width: $mobile-width;
+}
+
+.about-paragraph,
+.sub-navigation {
+	@extend %square;
+	float: left;
+}
+
+.about-paragraph p{
+	margin: 300px 0;
+}
+
+@media only screen and (min-width: $tablet-width) {
+
+	.about-page {
+		max-width: $tablet-width;
+	}
+
+}
+
+@media only screen and (min-width: $desktop-width) {
+
+	.about-page {
+		max-width: $desktop-width;
+	}
+
+	.sub-navigation {
+		width: $hundred*0.30;
+
+		p {
+			margin: 300px 0;
+		}
+	}
+
+	.about-paragraph {
+		width: $hundred*0.6989;
+	}
+
+}

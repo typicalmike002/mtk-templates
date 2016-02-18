@@ -1,0 +1,51 @@
+.calendar-page {
+	margin: 0 auto;
+	max-width: $mobile-width;
+}
+
+.calendar-page > * {
+	@extend %square;
+}
+
+.next-event p {
+	margin: 100px 0;
+}
+
+.full-calendar p {
+	margin: 400px 0;
+}
+
+
+.email-form p {
+	margin: 200px 0;
+}
+
+@media only screen and (min-width: $tablet-width) {
+
+	.calendar-page {
+		max-width: $tablet-width;
+	}
+	
+	.full-calendar p {
+		margin: 350px 0;
+	}
+
+	.email-form p {
+		margin: 150px 0;
+	}
+}
+
+@media only screen and (min-width: $desktop-width) {
+
+	.calendar-page {
+		max-width: $desktop-width;
+	}
+
+	.full-calendar p {
+		margin: 350px 0;
+	}
+
+	.email-form p {
+		margin: 100px 0;
+	}
+}

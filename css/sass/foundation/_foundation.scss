@@ -9,17 +9,8 @@ html {
 }
 
 body {
-	max-width: $mobile-width;
 	color: $color2;
 	margin: 0 auto;
-}
-
-body > * > * {
-	text-align: center;
-	width: $hundred;
-	background: $color3;
-	border: solid 1px $color2;
-	margin: auto;
 }
 
 #main {
@@ -28,18 +19,5 @@ body > * > * {
 
 @media only screen and (min-width: $tablet-width) {
 	
-	body {
-		max-width: $tablet-width;
-	}
-	
-	body > * > * {
-		float: left;
-	}
-}
 
-@media only screen and (min-width: $desktop-width) {
-	
-	body {
-		max-width: $desktop-width;
-	}
 }
