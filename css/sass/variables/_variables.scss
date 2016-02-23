@@ -6,6 +6,8 @@ $mobile-width : 400px;
 $tablet-width : 700px;
 $desktop-width : 1024px;
 
+$max-width : 1431px;
+
 
 
 
@@ -13,7 +15,8 @@ $desktop-width : 1024px;
 //--------Colors--------//
 $color1	: #000;	//Black
 $color2	: #fff; //White
-$color3 : #008080; // Teal
+$color3 : #333; //Dark Gray
+$color4 : #E20; //Brick Red
 
 
 
@@ -22,17 +25,35 @@ $color3 : #008080; // Teal
 %square {
 	text-align: center;
 	width: $hundred;
-	background: $color3;
-	border: solid 1px $color2;
+	border: dotted 1px $color1;
 	margin: auto;
+	padding: 1em;
 }
 
 
 
 
+%hero {
+	background: url('../images/gallery.jpg') no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: table;
+	width: $hundred;
+}
+
+%hero-textOverlay {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
 //--------Fonts--------//
 %primaryFont {
-	font-family: "Helvetica", "Arial", sans-se  rif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }

@@ -1,0 +1,24 @@
+//--------Gradients--------//
+@mixin gradient-linear($c1, $c2) {
+	background: $c1; /* Old browsers */
+	background: -moz-linear-gradient(top, $c1 0%, $c2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $c1 0%, $c2 100%); /* Chrome10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, $c1 0%, $c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+		startColorstr='$c1',
+		endColorstr='$c2',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+//--------Transition--------//
+@mixin transitions($transition) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+
+
+

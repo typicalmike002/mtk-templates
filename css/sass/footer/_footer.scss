@@ -6,17 +6,18 @@
 	@extend %square;
 }
 
-.address,
-.hours,
-.email {
-	
-	p {
-		margin: 40px 0;
+.hours {
+	img {
+		padding: 1em 0;
 	}
 }
 
-.hours p{
-	margin: 40px 0;
+.email {
+	padding: 5.9em 0;
+}
+
+.address {
+	padding: 5.3em 0;
 }
 
 .copyright {
@@ -31,10 +32,5 @@
 	.email {
 		float: left;
 		width: $hundred/3;
-
-		p {
-			margin: 60px 0;
-		}
 	}
-
 }

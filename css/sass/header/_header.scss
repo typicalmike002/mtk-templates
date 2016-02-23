@@ -1,61 +1,219 @@
 .header > * {
 	float: left;
 	@extend %square;
-}	
+}
 
 .logo {
-	width: $hundred/2;
+	width: $hundred/4;
 
-	p {
-		margin: 73px 0;
+	img {
+		height: 90px;
+	}
+
+	a {
+		text-align: left; // fixes offcenter issue.
+	}
+}
+
+.logo,
+.menu-icon_hamburger {
+	min-width: 128px;
+}
+
+.banner {
+	display: none;
+}
+
+#menu-icon {
+	display: none; // Hides the form used to activate the mobile menu display.
+}
+
+
+.menu-icon_hamburger {
+	width: $hundred/4;
+	padding: 35.5px 0;
+	float: right;
+
+	div {
+		border-top: 5px solid $color1;
+		width: 50px;
+		margin: 10px auto;
 	}
 }
 
 .navigation {
-	width: $hundred/2;
+	padding: 0;
+	@include gradient-linear($color3, $color1);
+	@include transitions(height .5s);
 
-	p {
-		margin: 73px 0;
+	a {
+		@include gradient-linear($color3, $color1);
+		display: block;
+		margin: 0 auto;
+		padding: 1em 0;
+		color: $color2;
+		text-decoration: none;
+ 
+			&:hover,
+			&:active {
+				@include gradient-linear(
+					lighten($color3, 5%),
+					lighten($color1, 5%)
+				);
+				border: 2px 0 solid $color1;
+		}
 	}
 }
+
+@media only screen and (max-width: $tablet-width) {
+
+	// Styles to help out the mobile navigation menu.
+
+	// It's importent that these only load for mobile devices.
+
+	.navigation {
+		height: 0px;
+		margin: 0;
+		border: 0;
+	}
+
+	#menu-icon:checked +
+	.navigation {
+		height: 257px;
+	}
+
+	.title,
+	.social-media,
+	#main {
+		background-color: $color2;
+	}
+
+	#main {
+		position: relative;
+		z-index: 0;
+	}
+}
+
+.title,
+.social-media {
+	float: left;
+}
+
+.title {
+	padding: 1.1em 0;
+
+	h2 {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.social-media {
+	padding: 0.62em 0;
+
+	a {
+		display: inline-block;
+	}
+}
+
+.social-media_icon {
+	display: inline-block;
+	width: $hundred*0.23;
+}
+
+.fb,
+.tw,
+.yt,
+.ig {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fb {
+	background-image: url('../images/fb.png');
+}
+
+.tw {
+	background-image: url('../images/tw.png');
+}
+
+.yt {
+	background-image: url('../images/yt.png');
+}
+
+.ig {
+	background-image: url('../images/ig.png');
+}
+
 
 @media only screen and (min-width: $tablet-width) {
 
 	.logo {
-		width: $hundred/4;
+		padding: 48px 0;
+	}
 
-		p {
-			margin: 93px 0;
-		}
+	.banner {
+		display: block;
+		padding: 95px;
+		width: $hundred*0.75;
+		height: auto;
+		background: url('../images/banner.jpg') center;
 	}
 
 	.navigation {
-		width: $hundred*0.75;
+		display: block;
+		width: $hundred;
 
-		p {
-			margin: 93px 0;
+		a {
+			display: inline-block;
+			width: $hundred*0.19;
+
+			&:hover,
+			&:active {
+				border: none;
+			}
 		}
 	}
 
+	#menu-icon,
+	.menu-icon_hamburger {
+		display: none;
+	}
+
+
 	.title {
-		float: left;
-		width: $hundred*0.75;
+		width: $hundred*0.70;
 	}
 
 	.social-media {
-		float: left;
-		width: $hundred/4;
+		width: $hundred*0.30;
 	}
 }
 
 @media only screen and (min-width: $desktop-width) {
 
-	.logo p {
-		margin: 123px 0;
+	.logo {
+
+		img {
+			height: auto;
+		}
 	}
 
-	.navigation p {
-		margin: 123px 0;
+	.banner {
+		padding: 87.9px 0;
 	}
 
+	.navigation {
+		width: $hundred*0.75;
+
+		a {
+			padding: 0.3em 0;
+		}
+	}
+
+	.title {
+		width: $hundred*0.45;
+	}
 }

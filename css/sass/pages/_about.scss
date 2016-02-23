@@ -6,7 +6,20 @@
 .about-paragraph,
 .sub-navigation {
 	@extend %square;
-	float: left;
+}
+
+.sub-navigation a {
+	margin: 0 auto;
+	padding: 0.5em 0;
+	color: $color1;
+	text-decoration: none;
+	display: block;
+	width: $hundred;
+	border-top: 1px solid $color1;
+
+	&:last-child {
+		border-bottom: 1px solid $color1;
+	}
 }
 
 .about-paragraph p{
@@ -19,6 +32,20 @@
 		max-width: $tablet-width;
 	}
 
+	.sub-navigation a {
+		display: inline-block;
+		width: $hundred*0.19;
+		border-right: 1px solid $color1;
+		border-top: 0;
+
+		&:first-child {
+			border-left: 1px solid $color1;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
 }
 
 @media only screen and (min-width: $desktop-width) {
@@ -27,11 +54,32 @@
 		max-width: $desktop-width;
 	}
 
+	.sub-navigation,
+	.about-paragraph {
+		float: left;
+	}
+	
 	.sub-navigation {
-		width: $hundred*0.30;
+		width: $hundred*0.20;
+		padding: 14.7em 0;
 
 		p {
 			margin: 300px 0;
+		}
+
+		a {
+			display: block;
+			width: $hundred;
+			border-top: 1px solid $color1;
+			border-right: 0;
+
+			&:first-child {
+				border-left: 0;
+			}
+
+			&:last-child {
+				border-bottom: 1px solid $color1;
+			}
 		}
 	}
 

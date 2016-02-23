@@ -1,5 +1,12 @@
 .gallery {
 	@extend %square;
+	@extend %hero;
+	height: 320px;
+
+	h1 {
+		margin: 0;
+		padding: 0.3em;
+	}
 }
 
 .home-page {
@@ -12,24 +19,97 @@
 
 }
 
-.gallery p {
-	margin: 200px 0;
+.coming-soon {
+	float: left;
 }
 
-.coming-soon,
-.live-stream,
-.email-signup, 
-.private-parties {
+.coming-soon_content {
+	margin: 0 auto;
 
-	p {
-		margin: 75px 0;
+	h3 {
+		margin: 0;
+		padding-bottom: 1em;
 	}
 }
 
+.coming-soon_date {
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+.coming-soon_date,
+.wireframe-image {
+	margin: 0 auto;
+	width: 100px;
+}
+
+.wireframe-image {
+
+	border: 1px solid $color1;
+	padding: 39.5px 0;
+
+	p {
+		text-align: center;
+	}
+}
+
+.coming-soon_details {
+	float: left;
+	width: $hundred;
+
+	h4 {
+		margin: 0;
+		padding: 0.5em 0;
+	}
+
+	button {
+		margin: 0.5em 0;
+	}
+}
+
+.live-stream {
+	float: left;
+}
+
+.live-stream_content {
+	text-align: left;
+	margin: 0 auto;
+
+	h3,p {
+		margin: 0;
+		padding: 0.5em 0;
+	}
+}
+
+.email-signup {
+	margin: 0 auto;
+	text-align: left;
+	float: left;
+}
+
+.email-signup_form {
+	margin: 0 auto;
+
+	p {
+		padding: 0.5em 0;
+	}
+}
+
+.email-signup_input {
+	width: $hundred;
+	display: block;
+	margin: 0.5em 0;
+}
+ 
+.private-parties {
+	float: left;
+	padding: 75px 0;
+}
+
 @media only screen and (min-width: $tablet-width) {
-	
-	.gallery p {
-		margin: 250px 0;
+
+	.gallery {
+		height: 380px;
 	}
 
 	.home-page {
@@ -40,47 +120,101 @@
 		float: left;
 	}
 
-	.coming-soon,
-	.private-parties {
-		p {
-			margin: 100px 0;
+	.coming-soon {
+		padding: 117px 0;
+	}
+
+	.coming-soon_image {
+		float: left;
+		width: $hundred*0.30;
+		min-width: 102px;
+	}
+
+	.coming-soon_content {
+		width: $hundred*0.61;
+
+		h3 {
+			text-align: left;
 		}
+	}
+
+	.coming-soon_details {
+		width: $hundred*0.70;
+		text-align: left;
+
+		button {
+			float: right;
+		}
+	}
+
+	.coming-soon_date,
+	.wireframe-image {
+		margin: 0;
+	}
+
+	.live-stream_content {
+		width: $hundred*0.82;
+	}
+
+	.private-parties {
+		padding: 100px 0;
+	}
+
+	.email-signup_form {
+		width: $hundred*0.82;
 	}
 
 	.live-stream,
 	.email-signup {
 		width: $hundred/2;
-	
-		p {
-			margin: 100px 0;
-		}
+	}
+
+	.live-stream {
+		padding: 100px 0;
+	}
+
+	.email-signup {
+		padding: 5.18em 0;
 	}
 }
 
 @media only screen and (min-width: $desktop-width) {
-	
-	.gallery p{
-		margin: 300px 0;
+
+	.gallery {
+		height: 440px;
 	}
 
 	.home-page {
 		max-width: $desktop-width;
 	}
 
-	.coming-soon,
+	.coming-soon_content {
+		width: $hundred*0.41;
+	}
+
+	.live-stream_content {
+		width: $hundred*0.57;
+	}
+
 	.private-parties {
-		
-		p {
-			margin: 150px 0;
-		}
+		padding: 150px 0;
+	}
+
+	.email-signup_form {
+		width: $hundred*0.57;
 	}
 
 	.live-stream,
 	.email-signup {
 		width: $hundred/2;
-	
-		p {
-			margin: 150px 0;
-		}
+		padding: 150px 0;
+	}
+
+	.email-signup {
+		padding: 7.73em 0;
+	}
+
+	.live-stream {
+		padding: 150px 0;
 	}
 }

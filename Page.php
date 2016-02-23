@@ -23,6 +23,7 @@ class Page {
 	public $request = 'home'; // Default Page
 	public $title;
 	
+	// Class Page requires a single $_GET request as an argument.
 	public function __construct( $get ){
 		$this->name = $get;
 		$this->title = ucfirst( $this->request );

@@ -9,15 +9,23 @@ html {
 }
 
 body {
-	color: $color2;
 	margin: 0 auto;
+	max-width: $max-width;
+}
+
+p {
+	margin: 0;
+}
+
+button {
+	margin: 0.5em 0;
+}
+
+h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0.5em 0;
 }
 
 #main {
 	clear: both;
-}
-
-@media only screen and (min-width: $tablet-width) {
-	
-
 }
